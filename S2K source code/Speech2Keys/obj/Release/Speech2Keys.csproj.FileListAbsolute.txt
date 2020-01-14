@@ -15,3 +15,22 @@ C:\Users\Peter\Documents\SharpDevelop Projects\Speech2Keys\Speech2Keys\obj\Relea
 C:\Users\Peter\Documents\SharpDevelop Projects\Speech2Keys\Speech2Keys\obj\Release\Speech2Keys.csproj.GenerateResource.Cache
 C:\Users\Peter\Documents\SharpDevelop Projects\Speech2Keys\Speech2Keys\obj\Release\Speech2Keys.exe
 C:\Users\Peter\Documents\SharpDevelop Projects\Speech2Keys\Speech2Keys\obj\Release\Speech2Keys.ErrorOnStartup.resources
+E:\Dev\Speech2Keys\S2K source code\Speech2Keys\bin\Release\Speech2Keys.exe.config
+E:\Dev\Speech2Keys\S2K source code\Speech2Keys\bin\Release\Speech2Keys.exe
+E:\Dev\Speech2Keys\S2K source code\Speech2Keys\bin\Release\InputManager.dll
+E:\Dev\Speech2Keys\S2K source code\Speech2Keys\obj\Release\Speech2Keys.csprojAssemblyReference.cache
+E:\Dev\Speech2Keys\S2K source code\Speech2Keys\obj\Release\Speech2Keys.AINameForm.resources
+E:\Dev\Speech2Keys\S2K source code\Speech2Keys\obj\Release\Speech2Keys.CommandNameForm.resources
+E:\Dev\Speech2Keys\S2K source code\Speech2Keys\obj\Release\Speech2Keys.ErrorOnStartup.resources
+E:\Dev\Speech2Keys\S2K source code\Speech2Keys\obj\Release\Speech2Keys.JokesForm.resources
+E:\Dev\Speech2Keys\S2K source code\Speech2Keys\obj\Release\Speech2Keys.KeyPhraseForm.resources
+E:\Dev\Speech2Keys\S2K source code\Speech2Keys\obj\Release\Speech2Keys.KeyPressedForm.resources
+E:\Dev\Speech2Keys\S2K source code\Speech2Keys\obj\Release\Speech2Keys.MainForm.resources
+E:\Dev\Speech2Keys\S2K source code\Speech2Keys\obj\Release\Speech2Keys.ParentForm.resources
+E:\Dev\Speech2Keys\S2K source code\Speech2Keys\obj\Release\Speech2Keys.ProfileNameForm.resources
+E:\Dev\Speech2Keys\S2K source code\Speech2Keys\obj\Release\Speech2Keys.QuickLaunch.resources
+E:\Dev\Speech2Keys\S2K source code\Speech2Keys\obj\Release\Speech2Keys.ResponsesForm.resources
+E:\Dev\Speech2Keys\S2K source code\Speech2Keys\obj\Release\Speech2Keys.csproj.GenerateResource.cache
+E:\Dev\Speech2Keys\S2K source code\Speech2Keys\obj\Release\Speech2Keys.csproj.CoreCompileInputs.cache
+E:\Dev\Speech2Keys\S2K source code\Speech2Keys\obj\Release\Speech2Keys.csproj.CopyComplete
+E:\Dev\Speech2Keys\S2K source code\Speech2Keys\obj\Release\Speech2Keys.exe
