@@ -11,6 +11,7 @@ using System.Drawing;
 using System.Windows.Forms;
 using System.Collections.Generic;
 using System.Speech.Synthesis;
+using System.Globalization;
 
 namespace Speech2Keys
 {
@@ -56,13 +57,9 @@ namespace Speech2Keys
 			commandsListBox.KeyUp += ListBoxKeyUp;
 			commandsListBox.MouseClick += ListBoxMouseClick;
 			commandsListBox.MouseDoubleClick += ListBoxMouseDoubleClick;
-			
-		
-			
-			
+
 			this.KeyUp += FormKeyUp;
-			
-			
+						
 			commandNameForm = new CommandNameForm();	
 			commandNameForm.FormBorderStyle = FormBorderStyle.None;
 			keyPressedForm = new KeyPressedForm();		
@@ -111,10 +108,10 @@ namespace Speech2Keys
 			
 			recognitionWorker = new RecognitionWorker(this);
 			synthesizer = new SpeechSynthesizer();
-			synthesizer.Volume = 100; 
-            synthesizer.Rate = -2;  
-            
-           
+            var v = synthesizer.GetInstalledVoices();
+            synthesizer.SelectVoiceByHints(VoiceGender.Female, VoiceAge.Adult, 0, CultureInfo.GetCultureInfo("en-US"));
+            synthesizer.Volume = 100; 
+            synthesizer.Rate = -2;    
 		}
 		
 		

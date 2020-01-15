@@ -13,6 +13,7 @@ using System.Windows.Forms;
 using System.Threading;
 using System.Speech.Synthesis;
 using InputManager;
+using System.Globalization;
 
 namespace Speech2Keys
 {
@@ -30,10 +31,11 @@ namespace Speech2Keys
 		SpeechSynthesizer synthesizer;
 		bool standby;
 		ParentForm parentForm;
-		
+		CultureInfo cultureInfo = new CultureInfo("en-US");
 		
 		public RecognitionWorker(ParentForm _parentForm)
 		{
+            
 			parentForm = _parentForm;
 			phraseList = new PhraseList();
 			synthesizer = new SpeechSynthesizer();
@@ -42,8 +44,8 @@ namespace Speech2Keys
             standby = false;
             logTextBox = parentForm.GetLogBox();
 			timer = new System.Timers.Timer(1500);
-			//timer.Elapsed += new ElapsedEventHandler(PhraseComplete);
-			recognizer = new SpeechRecognitionEngine();	
+            //timer.Elapsed += new ElapsedEventHandler(PhraseComplete);
+            recognizer = new SpeechRecognitionEngine(cultureInfo);
 			recognizer.BabbleTimeout = TimeSpan.FromSeconds(0);
 			recognizer.EndSilenceTimeout = TimeSpan.FromSeconds(0);
     		recognizer.EndSilenceTimeoutAmbiguous = TimeSpan.FromSeconds(0);
@@ -52,15 +54,13 @@ namespace Speech2Keys
             recognizer.RecognizeCompleted += PhraseComplete;
             try
             {
-            	recognizer.SetInputToDefaultAudioDevice();
+                recognizer.SetInputToDefaultAudioDevice();
             }
             catch (InvalidOperationException e)
             {
-            	parentForm.ErrorOnStartup();
+                parentForm.ErrorOnStartup();
                 string bla = e.ToString();
             }
-      
-            
 		}
 
 		public void StartRecognition(CommandList _commandList)
@@ -81,9 +81,19 @@ namespace Speech2Keys
 		void InitializeRecognition()
 		{
 			recognizer.UnloadAllGrammars();
+            
 			keywords = phraseList.ResetRecognition();
-			foreach (var k in keywords)
-				recognizer.LoadGrammar(new Grammar(new GrammarBuilder(k)));
+            foreach (var k in keywords)
+            {
+                GrammarBuilder gb = new GrammarBuilder
+                {
+                    Culture = cultureInfo
+                };
+                gb.Append(k);
+                recognizer.LoadGrammar(new Grammar(gb));
+            }
+               
+				//recognizer.LoadGrammar(new Grammar(new GrammarBuilder(k)));
 		}
 		
 		void PhraseComplete(object sender, RecognizeCompletedEventArgs e)
