@@ -112,7 +112,7 @@ namespace Speech2Keys
 	        		parentForm.AddMessage("COMMAND RECOGNIZED: "+ command.name);
 	        		phraseList.ResetRecognition();
 	        		// catch some special commands
-	        		if (command.name == "Pause Speech Recognition" || command.name == "Teamspeak on")
+	        		if (command.name == "Pause Speech Recognition")
 	        			standby = true;
 	        		
 	        		
@@ -123,12 +123,12 @@ namespace Speech2Keys
 	        			PressAKey(s);
 
         			string text = command.GenerateResponse();
-        			if (!string.IsNullOrEmpty(text) && !(command.name == "Reactivate Speech Recognition" || command.name == "Teamspeak off"))
+        			if (!string.IsNullOrEmpty(text) && !(command.name == "Reactivate Speech Recognition"))
     					synthesizer.SpeakAsync(text);
         		}
         		else
     			{
-    				if (command.name == "Reactivate Speech Recognition" || command.name == "AIName" || command.name == "Teamspeak off")
+    				if (command.name == "Reactivate Speech Recognition" || command.name == "AIName")
     				{
     					standby = false;
     					foreach (var s in command.sequence)

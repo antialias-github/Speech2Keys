@@ -115,7 +115,7 @@ namespace Speech2Keys
 				if (((string)i).EndsWith(" down"))
 					downCount++;
 			}
-			if (upCount != downCount && (command.name != "Teamspeak on"  && command.name != "Teamspeak off"))
+			if (upCount != downCount)
 			{
 				Workflow.parentForm.AddMessage("Number of key-up actions does not match number of key-down actions. Keys not added " + Environment.NewLine);
 				return false;

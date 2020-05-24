@@ -122,14 +122,14 @@ namespace Speech2Keys
 				var result = new List<Command>();
 			
 				Command command1 = new Command();
-				command1.name = "AIName";
+				command1.name = "Standard Command - AIName";
 				result.Add(command1);
-				command1.keyPhrases.Add("Alexa");
+				command1.keyPhrases.Add("Flora");
 				command1.responses.Add("Listening");
 				listOfCommands.Add(command1);
 				
 				Command command2 = new Command();
-				command2.name = "Jokes";
+				command2.name = "Standard Command - Jokes";
 				result.Add(command2);
 				command2.keyPhrases.Add("Tell me a joke");
 				command2.keyPhrases.Add("Give me a joke");
@@ -138,7 +138,7 @@ namespace Speech2Keys
 				listOfCommands.Add(command2);
 				
 				Command command3 = new Command();
-				command3.name = "Pause Speech Recognition";
+				command3.name = "Standard Command - Pause Recognition";
 				result.Add(command3);
 				command3.keyPhrases.Add("Pause speech recognition");
 				command3.keyPhrases.Add("Stop listening");
@@ -148,7 +148,7 @@ namespace Speech2Keys
 				listOfCommands.Add(command3);
 				
 				Command command4 = new Command();
-				command4.name = "Reactivate Speech Recognition";
+				command4.name = "Standard Command - Reactivate Recognition";
 				result.Add(command4);
 				command4.keyPhrases.Add("Resume speech recognition");
 				command4.keyPhrases.Add("Start listening");
@@ -158,32 +158,14 @@ namespace Speech2Keys
 				listOfCommands.Add(command4);
 				
 				Command command5 = new Command();
-				command5.name = "Stop Speech Output";
+				command5.name = "Standard Command - Stop Speech Output";
 				result.Add(command5);
 				command5.keyPhrases.Add("Shut up");
 				command5.keyPhrases.Add("Stop speech output");
 				command5.keyPhrases.Add("Be silent");
 				command5.responses.Add("Shutting up");
 				listOfCommands.Add(command5);
-				/*
-				Command command6 = new Command();
-				command6.name = "Teamspeak on";
-				result.Add(command6);
-				command6.keyPhrases.Add("Teamspeak on");
-				command6.keyPhrases.Add("Teamspeak");
-				command6.responses.Add("Teamspeak on");
-				command6.sequence.Add("/ down");
-				listOfCommands.Add(command6);
 				
-				Command command7 = new Command();
-				command7.name = "Teamspeak off";
-				result.Add(command7);
-				command7.keyPhrases.Add("over and out");
-				command7.keyPhrases.Add("teamspeak off");
-				command7.responses.Add("back online");
-				command7.sequence.Add("/ up");
-				listOfCommands.Add(command7);
-                */
 				standardResponses.Clear();
 				standardResponses.Add("Roger");
 				standardResponses.Add("You got it");

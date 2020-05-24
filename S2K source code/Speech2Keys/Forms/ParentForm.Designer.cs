@@ -55,9 +55,9 @@ namespace Speech2Keys
             // 
             // stopButton
             // 
-            this.stopButton.Location = new System.Drawing.Point(35, 152);
+            this.stopButton.Location = new System.Drawing.Point(156, 214);
             this.stopButton.Name = "stopButton";
-            this.stopButton.Size = new System.Drawing.Size(148, 29);
+            this.stopButton.Size = new System.Drawing.Size(107, 41);
             this.stopButton.TabIndex = 12;
             this.stopButton.Text = "Stop Voice Recognition";
             this.stopButton.UseVisualStyleBackColor = true;
@@ -65,9 +65,9 @@ namespace Speech2Keys
             // 
             // startButton
             // 
-            this.startButton.Location = new System.Drawing.Point(34, 107);
+            this.startButton.Location = new System.Drawing.Point(39, 214);
             this.startButton.Name = "startButton";
-            this.startButton.Size = new System.Drawing.Size(147, 27);
+            this.startButton.Size = new System.Drawing.Size(102, 41);
             this.startButton.TabIndex = 11;
             this.startButton.Text = "Start Voice Recognition";
             this.startButton.UseVisualStyleBackColor = true;
@@ -77,39 +77,39 @@ namespace Speech2Keys
             // 
             this.label1.Location = new System.Drawing.Point(337, 9);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(242, 64);
+            this.label1.Size = new System.Drawing.Size(348, 81);
             this.label1.TabIndex = 9;
-            this.label1.Text = "Click command to see details." + Environment.NewLine + "Double click command to edit." + Environment.NewLine +"Hit \'del\' key to de" +
-    "lete selected command(s)." + Environment.NewLine + "(Standard commands cannot be deleted)" + Environment.NewLine;
+            this.label1.Text = "Click command to see details.\r\nDouble click command to edit.\r\nHit \'del\' key to de" +
+    "lete selected command(s).\r\n(Standard commands cannot be deleted)\r\n";
             // 
             // commandsListBox
             // 
             this.commandsListBox.FormattingEnabled = true;
-            this.commandsListBox.Location = new System.Drawing.Point(337, 76);
+            this.commandsListBox.Location = new System.Drawing.Point(337, 102);
             this.commandsListBox.Name = "commandsListBox";
             this.commandsListBox.SelectionMode = System.Windows.Forms.SelectionMode.MultiExtended;
-            this.commandsListBox.Size = new System.Drawing.Size(242, 459);
+            this.commandsListBox.Size = new System.Drawing.Size(348, 433);
             this.commandsListBox.TabIndex = 8;
             // 
             // logTextBox
             // 
             this.logTextBox.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left)));
-            this.logTextBox.Location = new System.Drawing.Point(595, 12);
+            this.logTextBox.Location = new System.Drawing.Point(703, 12);
             this.logTextBox.Multiline = true;
             this.logTextBox.Name = "logTextBox";
-            this.logTextBox.Size = new System.Drawing.Size(243, 523);
+            this.logTextBox.Size = new System.Drawing.Size(269, 523);
             this.logTextBox.TabIndex = 13;
             this.logTextBox.Text = "Logging Information: ";
             this.logTextBox.TextChanged += new System.EventHandler(this.logTextBox_TextChanged);
             // 
             // addCommandButton
             // 
-            this.addCommandButton.Location = new System.Drawing.Point(35, 271);
+            this.addCommandButton.Location = new System.Drawing.Point(39, 102);
             this.addCommandButton.Name = "addCommandButton";
-            this.addCommandButton.Size = new System.Drawing.Size(147, 264);
+            this.addCommandButton.Size = new System.Drawing.Size(224, 58);
             this.addCommandButton.TabIndex = 14;
-            this.addCommandButton.Text = "Add New Command " + Environment.NewLine + "(or hit Enter)";
+            this.addCommandButton.Text = "Add New Command \r\n(or hit Enter)";
             this.addCommandButton.UseVisualStyleBackColor = true;
             this.addCommandButton.Click += new System.EventHandler(this.AddCommandButtonClick);
             // 
@@ -117,16 +117,16 @@ namespace Speech2Keys
             // 
             this.label2.Location = new System.Drawing.Point(36, 9);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(147, 81);
+            this.label2.Size = new System.Drawing.Size(227, 81);
             this.label2.TabIndex = 15;
             this.label2.Text = "Changes made while voice recognition is running will only take effect after you r" +
-    "estart voice recognition" + Environment.NewLine +"(Hit \"Stop\" then \"Start\" button)";
+    "estart voice recognition\r\n(Hit \"Stop\" then \"Start\" button)";
             // 
             // ParentForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(850, 547);
+            this.ClientSize = new System.Drawing.Size(984, 547);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.addCommandButton);
             this.Controls.Add(this.logTextBox);
