@@ -285,6 +285,9 @@ lifecorp bot
 urgent deliveries
 overwrite cora
 activate transmitter
+pickup payload
+pick up box
+drop trash
 ::KEYPHRASES_END
 ::RESPONSES
 ::RESPONSES_END
