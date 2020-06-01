@@ -223,25 +223,6 @@ escape up
 ::COMMAND_END
 ::COMMAND
 ::NAME
-F3 (HUD)
-::NAME_END
-::KEYPHRASES
-hud on
-hud off
-toggle hud
-::KEYPHRASES_END
-::RESPONSES
-::RESPONSES_END
-::USESTANDARDRESPONSES
-false
-::USESTANDARDRESPONSES_END
-::SEQUENCE
-F3 down
-F3 up
-::SEQUENCE_END
-::COMMAND_END
-::COMMAND
-::NAME
 E-Key (Action)
 ::NAME_END
 ::KEYPHRASES
@@ -288,6 +269,7 @@ activate transmitter
 pickup payload
 pick up box
 drop trash
+trash chute
 ::KEYPHRASES_END
 ::RESPONSES
 ::RESPONSES_END
@@ -297,5 +279,25 @@ false
 ::SEQUENCE
 e down
 e up
+::SEQUENCE_END
+::COMMAND_END
+::COMMAND
+::NAME
+F3 (HUD)
+::NAME_END
+::KEYPHRASES
+hud on
+hud off
+toggle hud
+hud
+::KEYPHRASES_END
+::RESPONSES
+::RESPONSES_END
+::USESTANDARDRESPONSES
+false
+::USESTANDARDRESPONSES_END
+::SEQUENCE
+F3 down
+F3 up
 ::SEQUENCE_END
 ::COMMAND_END
