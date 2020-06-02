@@ -289,7 +289,6 @@ F3 (HUD)
 hud on
 hud off
 toggle hud
-hud
 ::KEYPHRASES_END
 ::RESPONSES
 ::RESPONSES_END
