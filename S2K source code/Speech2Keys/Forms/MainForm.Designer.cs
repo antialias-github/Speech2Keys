@@ -32,6 +32,8 @@ namespace Speech2Keys
 		private System.Windows.Forms.OpenFileDialog openFileDialog1;
 		private System.Windows.Forms.SaveFileDialog saveFileDialog1;
 		
+     
+   
 		/// <summary>
 		/// Disposes resources used by the form.
 		/// </summary>

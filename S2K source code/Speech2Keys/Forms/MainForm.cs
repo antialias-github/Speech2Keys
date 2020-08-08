@@ -52,10 +52,11 @@ namespace Speech2Keys
 		
 		public MainForm()
 		{
-			//
-			// The InitializeComponent() call is required for Windows Forms designer support.
-			//
-			error = false;
+            this.Icon = Resource.s2k;
+            //
+            // The InitializeComponent() call is required for Windows Forms designer support.
+            //
+            error = false;
 			InitializeComponent();
 				
 			serializer = new Serializer();

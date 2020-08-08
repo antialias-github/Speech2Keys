@@ -136,28 +136,6 @@ false
 ::COMMAND_END
 ::COMMAND
 ::NAME
-I-key (Inventory)
-::NAME_END
-::KEYPHRASES
-inventory
-open inventory
-close inventory
-show items
-sell
-toggle inventory
-::KEYPHRASES_END
-::RESPONSES
-::RESPONSES_END
-::USESTANDARDRESPONSES
-false
-::USESTANDARDRESPONSES_END
-::SEQUENCE
-i down
-i up
-::SEQUENCE_END
-::COMMAND_END
-::COMMAND
-::NAME
 M-Key (Map)
 ::NAME_END
 ::KEYPHRASES
@@ -176,28 +154,6 @@ false
 ::SEQUENCE
 m down
 m up
-::SEQUENCE_END
-::COMMAND_END
-::COMMAND
-::NAME
-X-Key (Camera)
-::NAME_END
-::KEYPHRASES
-free camera
-camera on
-camera off
-camera
-toggle camera
-fix camera
-::KEYPHRASES_END
-::RESPONSES
-::RESPONSES_END
-::USESTANDARDRESPONSES
-false
-::USESTANDARDRESPONSES_END
-::SEQUENCE
-x down
-x up
 ::SEQUENCE_END
 ::COMMAND_END
 ::COMMAND
@@ -238,6 +194,29 @@ false
 ::SEQUENCE
 F3 down
 F3 up
+::SEQUENCE_END
+::COMMAND_END
+::COMMAND
+::NAME
+X-Key (Camera)
+::NAME_END
+::KEYPHRASES
+free camera
+camera on
+camera off
+camera
+toggle camera
+fix camera
+switch to third person view
+::KEYPHRASES_END
+::RESPONSES
+::RESPONSES_END
+::USESTANDARDRESPONSES
+false
+::USESTANDARDRESPONSES_END
+::SEQUENCE
+x down
+x up
 ::SEQUENCE_END
 ::COMMAND_END
 ::COMMAND
@@ -290,6 +269,7 @@ pick up box
 drop trash
 trash chute
 gorgothoa
+drop payload
 ::KEYPHRASES_END
 ::RESPONSES
 ::RESPONSES_END
@@ -299,5 +279,27 @@ false
 ::SEQUENCE
 e down
 e up
+::SEQUENCE_END
+::COMMAND_END
+::COMMAND
+::NAME
+I-key (Inventory)
+::NAME_END
+::KEYPHRASES
+inventory
+open inventory
+close inventory
+show items
+toggle inventory
+sell
+::KEYPHRASES_END
+::RESPONSES
+::RESPONSES_END
+::USESTANDARDRESPONSES
+false
+::USESTANDARDRESPONSES_END
+::SEQUENCE
+i down
+i up
 ::SEQUENCE_END
 ::COMMAND_END
