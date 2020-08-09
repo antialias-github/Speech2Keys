@@ -221,6 +221,28 @@ x up
 ::COMMAND_END
 ::COMMAND
 ::NAME
+I-key (Inventory)
+::NAME_END
+::KEYPHRASES
+inventory
+open inventory
+close inventory
+show items
+toggle inventory
+sell
+::KEYPHRASES_END
+::RESPONSES
+::RESPONSES_END
+::USESTANDARDRESPONSES
+false
+::USESTANDARDRESPONSES_END
+::SEQUENCE
+i down
+i up
+::SEQUENCE_END
+::COMMAND_END
+::COMMAND
+::NAME
 E-Key (Action)
 ::NAME_END
 ::KEYPHRASES
@@ -270,6 +292,7 @@ drop trash
 trash chute
 gorgothoa
 drop payload
+mail package
 ::KEYPHRASES_END
 ::RESPONSES
 ::RESPONSES_END
@@ -279,27 +302,5 @@ false
 ::SEQUENCE
 e down
 e up
-::SEQUENCE_END
-::COMMAND_END
-::COMMAND
-::NAME
-I-key (Inventory)
-::NAME_END
-::KEYPHRASES
-inventory
-open inventory
-close inventory
-show items
-toggle inventory
-sell
-::KEYPHRASES_END
-::RESPONSES
-::RESPONSES_END
-::USESTANDARDRESPONSES
-false
-::USESTANDARDRESPONSES_END
-::SEQUENCE
-i down
-i up
 ::SEQUENCE_END
 ::COMMAND_END
