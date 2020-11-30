@@ -1,0 +1,323 @@
+::VERSION
+1,0,0
+::VERSION_END
+::PROFILENAME
+Cloudpunk
+::PROFILENAME_END
+::STANDARDRESPONSES
+Roger
+You got it
+Affirmative
+Will do
+::STANDARDRESPONSES_END
+::COMMAND
+::NAME
+Jokes
+::NAME_END
+::KEYPHRASES
+Tell me a joke
+Give me a joke
+Tell me something funny
+::KEYPHRASES_END
+::RESPONSES
+I have nothing funny to say
+::RESPONSES_END
+::USESTANDARDRESPONSES
+false
+::USESTANDARDRESPONSES_END
+::SEQUENCE
+::SEQUENCE_END
+::COMMAND_END
+::COMMAND
+::NAME
+Pause Speech Recognition
+::NAME_END
+::KEYPHRASES
+Pause speech recognition
+Stop listening
+Go offline
+Deactivate speech recognition
+::KEYPHRASES_END
+::RESPONSES
+Going offline
+::RESPONSES_END
+::USESTANDARDRESPONSES
+false
+::USESTANDARDRESPONSES_END
+::SEQUENCE
+::SEQUENCE_END
+::COMMAND_END
+::COMMAND
+::NAME
+Reactivate Speech Recognition
+::NAME_END
+::KEYPHRASES
+Resume speech recognition
+Start listening
+Come online
+Reactivate speech recognition
+::KEYPHRASES_END
+::RESPONSES
+Back online
+::RESPONSES_END
+::USESTANDARDRESPONSES
+false
+::USESTANDARDRESPONSES_END
+::SEQUENCE
+::SEQUENCE_END
+::COMMAND_END
+::COMMAND
+::NAME
+Stop Speech Output
+::NAME_END
+::KEYPHRASES
+Shut up
+Stop speech output
+Be silent
+::KEYPHRASES_END
+::RESPONSES
+Shutting up
+::RESPONSES_END
+::USESTANDARDRESPONSES
+false
+::USESTANDARDRESPONSES_END
+::SEQUENCE
+::SEQUENCE_END
+::COMMAND_END
+::COMMAND
+::NAME
+Turn Responses Off
+::NAME_END
+::KEYPHRASES
+turn responses off
+responses off
+::KEYPHRASES_END
+::RESPONSES
+verbose mode off
+::RESPONSES_END
+::USESTANDARDRESPONSES
+false
+::USESTANDARDRESPONSES_END
+::SEQUENCE
+::SEQUENCE_END
+::COMMAND_END
+::COMMAND
+::NAME
+Turn Responses On
+::NAME_END
+::KEYPHRASES
+turn responses on
+responses on
+::KEYPHRASES_END
+::RESPONSES
+verbose mode on
+::RESPONSES_END
+::USESTANDARDRESPONSES
+false
+::USESTANDARDRESPONSES_END
+::SEQUENCE
+::SEQUENCE_END
+::COMMAND_END
+::COMMAND
+::NAME
+AIName
+::NAME_END
+::KEYPHRASES
+Flora
+::KEYPHRASES_END
+::RESPONSES
+Listening
+::RESPONSES_END
+::USESTANDARDRESPONSES
+false
+::USESTANDARDRESPONSES_END
+::SEQUENCE
+::SEQUENCE_END
+::COMMAND_END
+::COMMAND
+::NAME
+M-Key (Map)
+::NAME_END
+::KEYPHRASES
+map on
+map off
+close map
+open map
+map
+toggle map
+::KEYPHRASES_END
+::RESPONSES
+::RESPONSES_END
+::USESTANDARDRESPONSES
+false
+::USESTANDARDRESPONSES_END
+::SEQUENCE
+m down
+m up
+::SEQUENCE_END
+::COMMAND_END
+::COMMAND
+::NAME
+Escape-Key (Exit)
+::NAME_END
+::KEYPHRASES
+exit
+escape
+back
+done
+resume
+::KEYPHRASES_END
+::RESPONSES
+::RESPONSES_END
+::USESTANDARDRESPONSES
+false
+::USESTANDARDRESPONSES_END
+::SEQUENCE
+escape down
+escape up
+::SEQUENCE_END
+::COMMAND_END
+::COMMAND
+::NAME
+F3 (HUD)
+::NAME_END
+::KEYPHRASES
+hud on
+hud off
+toggle hud
+::KEYPHRASES_END
+::RESPONSES
+::RESPONSES_END
+::USESTANDARDRESPONSES
+false
+::USESTANDARDRESPONSES_END
+::SEQUENCE
+F3 down
+F3 up
+::SEQUENCE_END
+::COMMAND_END
+::COMMAND
+::NAME
+X-Key (Camera)
+::NAME_END
+::KEYPHRASES
+free camera
+camera on
+camera off
+camera
+toggle camera
+fix camera
+switch to third person view
+::KEYPHRASES_END
+::RESPONSES
+::RESPONSES_END
+::USESTANDARDRESPONSES
+false
+::USESTANDARDRESPONSES_END
+::SEQUENCE
+x down
+x up
+::SEQUENCE_END
+::COMMAND_END
+::COMMAND
+::NAME
+I-key (Inventory)
+::NAME_END
+::KEYPHRASES
+inventory
+open inventory
+close inventory
+show items
+toggle inventory
+sell
+::KEYPHRASES_END
+::RESPONSES
+::RESPONSES_END
+::USESTANDARDRESPONSES
+false
+::USESTANDARDRESPONSES_END
+::SEQUENCE
+i down
+i up
+::SEQUENCE_END
+::COMMAND_END
+::COMMAND
+::NAME
+E-Key (Action)
+::NAME_END
+::KEYPHRASES
+land hova
+land
+get in
+talk
+drop off
+park vehicle
+enter vehicle
+enter appartment
+leave
+action
+buy upgrades
+fuel
+boost
+repair lift
+enter club
+leave club
+abort
+consume
+wear
+drop package
+access restricted
+use flyer
+pick up
+holocash
+investigate object
+pick up drive
+security terminal
+old terminal
+lift
+change sign
+investigate
+buzzer
+master reset switch
+quarantine chute
+lockdown
+mainframe power
+lifecorp bot
+urgent deliveries
+overwrite cora
+activate transmitter
+pickup payload
+pick up box
+drop trash
+trash chute
+gorgothoa
+drop payload
+mail package
+::KEYPHRASES_END
+::RESPONSES
+::RESPONSES_END
+::USESTANDARDRESPONSES
+false
+::USESTANDARDRESPONSES_END
+::SEQUENCE
+e down
+e up
+::SEQUENCE_END
+::COMMAND_END
+::COMMAND
+::NAME
+Screenshot
+::NAME_END
+::KEYPHRASES
+screenshot
+::KEYPHRASES_END
+::RESPONSES
+::RESPONSES_END
+::USESTANDARDRESPONSES
+false
+::USESTANDARDRESPONSES_END
+::SEQUENCE
+F12 down
+F12 up
+::SEQUENCE_END
+::COMMAND_END
