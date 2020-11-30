@@ -321,3 +321,22 @@ F12 down
 F12 up
 ::SEQUENCE_END
 ::COMMAND_END
+::COMMAND
+::NAME
+Cockpit view
+::NAME_END
+::KEYPHRASES
+cockpit view
+enter cockpit view
+exit cockpit view
+::KEYPHRASES_END
+::RESPONSES
+::RESPONSES_END
+::USESTANDARDRESPONSES
+false
+::USESTANDARDRESPONSES_END
+::SEQUENCE
+v down
+v up
+::SEQUENCE_END
+::COMMAND_END
