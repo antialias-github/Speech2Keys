@@ -1,0 +1,768 @@
+::VERSION
+1,0,0
+::VERSION_END
+::PROFILENAME
+Sins of a Solar Empire
+::PROFILENAME_END
+::STANDARDRESPONSES
+Roger
+You got it
+Affirmative
+Will do
+::STANDARDRESPONSES_END
+::COMMAND
+::NAME
+Standard Command - AIName
+::NAME_END
+::KEYPHRASES
+Flora
+::KEYPHRASES_END
+::RESPONSES
+Listening
+::RESPONSES_END
+::USESTANDARDRESPONSES
+false
+::USESTANDARDRESPONSES_END
+::SEQUENCE
+::SEQUENCE_END
+::COMMAND_END
+::COMMAND
+::NAME
+Standard Command - Jokes
+::NAME_END
+::KEYPHRASES
+Tell me a joke
+Give me a joke
+Tell me something funny
+::KEYPHRASES_END
+::RESPONSES
+I have nothing funny to say
+::RESPONSES_END
+::USESTANDARDRESPONSES
+false
+::USESTANDARDRESPONSES_END
+::SEQUENCE
+::SEQUENCE_END
+::COMMAND_END
+::COMMAND
+::NAME
+Standard Command - Pause Recognition
+::NAME_END
+::KEYPHRASES
+Pause speech recognition
+Stop listening
+Go offline
+Deactivate speech recognition
+::KEYPHRASES_END
+::RESPONSES
+Going offline
+::RESPONSES_END
+::USESTANDARDRESPONSES
+false
+::USESTANDARDRESPONSES_END
+::SEQUENCE
+::SEQUENCE_END
+::COMMAND_END
+::COMMAND
+::NAME
+Standard Command - Reactivate Recognition
+::NAME_END
+::KEYPHRASES
+Resume speech recognition
+Start listening
+Come online
+Reactivate speech recognition
+::KEYPHRASES_END
+::RESPONSES
+Back online
+::RESPONSES_END
+::USESTANDARDRESPONSES
+false
+::USESTANDARDRESPONSES_END
+::SEQUENCE
+::SEQUENCE_END
+::COMMAND_END
+::COMMAND
+::NAME
+Standard Command - Stop Speech Output
+::NAME_END
+::KEYPHRASES
+Shut up
+Stop speech output
+Be silent
+::KEYPHRASES_END
+::RESPONSES
+Shutting up
+::RESPONSES_END
+::USESTANDARDRESPONSES
+false
+::USESTANDARDRESPONSES_END
+::SEQUENCE
+::SEQUENCE_END
+::COMMAND_END
+::COMMAND
+::NAME
+assign group 2
+::NAME_END
+::KEYPHRASES
+assign group two
+assign two
+::KEYPHRASES_END
+::RESPONSES
+::RESPONSES_END
+::USESTANDARDRESPONSES
+false
+::USESTANDARDRESPONSES_END
+::SEQUENCE
+control down
+2 down
+2 up
+control up
+::SEQUENCE_END
+::COMMAND_END
+::COMMAND
+::NAME
+assign group 3
+::NAME_END
+::KEYPHRASES
+assign three
+assign group three
+::KEYPHRASES_END
+::RESPONSES
+::RESPONSES_END
+::USESTANDARDRESPONSES
+false
+::USESTANDARDRESPONSES_END
+::SEQUENCE
+control down
+3 down
+3 up
+control up
+::SEQUENCE_END
+::COMMAND_END
+::COMMAND
+::NAME
+assign group 4
+::NAME_END
+::KEYPHRASES
+assign group four
+assign four
+::KEYPHRASES_END
+::RESPONSES
+::RESPONSES_END
+::USESTANDARDRESPONSES
+false
+::USESTANDARDRESPONSES_END
+::SEQUENCE
+control down
+4 down
+4 up
+control up
+::SEQUENCE_END
+::COMMAND_END
+::COMMAND
+::NAME
+assign group 5
+::NAME_END
+::KEYPHRASES
+assign group five
+assign five
+::KEYPHRASES_END
+::RESPONSES
+::RESPONSES_END
+::USESTANDARDRESPONSES
+false
+::USESTANDARDRESPONSES_END
+::SEQUENCE
+control down
+5 down
+5 up
+control up
+::SEQUENCE_END
+::COMMAND_END
+::COMMAND
+::NAME
+assign group 6
+::NAME_END
+::KEYPHRASES
+assign six
+assign group six
+::KEYPHRASES_END
+::RESPONSES
+::RESPONSES_END
+::USESTANDARDRESPONSES
+false
+::USESTANDARDRESPONSES_END
+::SEQUENCE
+control down
+6 down
+6 up
+control up
+::SEQUENCE_END
+::COMMAND_END
+::COMMAND
+::NAME
+assign group 7
+::NAME_END
+::KEYPHRASES
+assign group seven
+assign seven
+::KEYPHRASES_END
+::RESPONSES
+::RESPONSES_END
+::USESTANDARDRESPONSES
+false
+::USESTANDARDRESPONSES_END
+::SEQUENCE
+control down
+7 down
+7 up
+control up
+::SEQUENCE_END
+::COMMAND_END
+::COMMAND
+::NAME
+assign group 8
+::NAME_END
+::KEYPHRASES
+assign group eight
+assign eight
+::KEYPHRASES_END
+::RESPONSES
+::RESPONSES_END
+::USESTANDARDRESPONSES
+false
+::USESTANDARDRESPONSES_END
+::SEQUENCE
+control down
+8 down
+8 up
+control up
+::SEQUENCE_END
+::COMMAND_END
+::COMMAND
+::NAME
+assign group 9
+::NAME_END
+::KEYPHRASES
+assign group nine
+assign nine
+::KEYPHRASES_END
+::RESPONSES
+::RESPONSES_END
+::USESTANDARDRESPONSES
+false
+::USESTANDARDRESPONSES_END
+::SEQUENCE
+control down
+9 down
+9 up
+control up
+::SEQUENCE_END
+::COMMAND_END
+::COMMAND
+::NAME
+select group 3
+::NAME_END
+::KEYPHRASES
+select group three
+select three
+::KEYPHRASES_END
+::RESPONSES
+::RESPONSES_END
+::USESTANDARDRESPONSES
+false
+::USESTANDARDRESPONSES_END
+::SEQUENCE
+3 down
+3 up
+::SEQUENCE_END
+::COMMAND_END
+::COMMAND
+::NAME
+select group 4
+::NAME_END
+::KEYPHRASES
+select group four
+select four
+::KEYPHRASES_END
+::RESPONSES
+::RESPONSES_END
+::USESTANDARDRESPONSES
+false
+::USESTANDARDRESPONSES_END
+::SEQUENCE
+4 down
+4 up
+::SEQUENCE_END
+::COMMAND_END
+::COMMAND
+::NAME
+select group 6
+::NAME_END
+::KEYPHRASES
+select group 6
+select 6
+::KEYPHRASES_END
+::RESPONSES
+::RESPONSES_END
+::USESTANDARDRESPONSES
+false
+::USESTANDARDRESPONSES_END
+::SEQUENCE
+6 down
+6 up
+::SEQUENCE_END
+::COMMAND_END
+::COMMAND
+::NAME
+select group 5
+::NAME_END
+::KEYPHRASES
+select group five
+select five
+::KEYPHRASES_END
+::RESPONSES
+::RESPONSES_END
+::USESTANDARDRESPONSES
+false
+::USESTANDARDRESPONSES_END
+::SEQUENCE
+5 down
+5 up
+::SEQUENCE_END
+::COMMAND_END
+::COMMAND
+::NAME
+select group 7
+::NAME_END
+::KEYPHRASES
+select group seven
+select seven
+::KEYPHRASES_END
+::RESPONSES
+::RESPONSES_END
+::USESTANDARDRESPONSES
+false
+::USESTANDARDRESPONSES_END
+::SEQUENCE
+7 down
+7 up
+::SEQUENCE_END
+::COMMAND_END
+::COMMAND
+::NAME
+select group 8
+::NAME_END
+::KEYPHRASES
+select group eight
+select eight
+::KEYPHRASES_END
+::RESPONSES
+::RESPONSES_END
+::USESTANDARDRESPONSES
+false
+::USESTANDARDRESPONSES_END
+::SEQUENCE
+8 down
+8 up
+::SEQUENCE_END
+::COMMAND_END
+::COMMAND
+::NAME
+select group 9
+::NAME_END
+::KEYPHRASES
+select group nine
+select nine
+::KEYPHRASES_END
+::RESPONSES
+::RESPONSES_END
+::USESTANDARDRESPONSES
+false
+::USESTANDARDRESPONSES_END
+::SEQUENCE
+9 down
+9 up
+::SEQUENCE_END
+::COMMAND_END
+::COMMAND
+::NAME
+focus group 2
+::NAME_END
+::KEYPHRASES
+focus two
+focus group two
+::KEYPHRASES_END
+::RESPONSES
+::RESPONSES_END
+::USESTANDARDRESPONSES
+false
+::USESTANDARDRESPONSES_END
+::SEQUENCE
+2 down
+2 up
+2 down
+2 up
+::SEQUENCE_END
+::COMMAND_END
+::COMMAND
+::NAME
+focus group 3
+::NAME_END
+::KEYPHRASES
+focus group three
+focus three
+::KEYPHRASES_END
+::RESPONSES
+::RESPONSES_END
+::USESTANDARDRESPONSES
+false
+::USESTANDARDRESPONSES_END
+::SEQUENCE
+3 down
+3 up
+3 down
+3 up
+::SEQUENCE_END
+::COMMAND_END
+::COMMAND
+::NAME
+focus group 4
+::NAME_END
+::KEYPHRASES
+focus group four
+focus four
+::KEYPHRASES_END
+::RESPONSES
+::RESPONSES_END
+::USESTANDARDRESPONSES
+false
+::USESTANDARDRESPONSES_END
+::SEQUENCE
+4 down
+4 up
+4 down
+4 up
+::SEQUENCE_END
+::COMMAND_END
+::COMMAND
+::NAME
+focus group 5
+::NAME_END
+::KEYPHRASES
+focus group five
+focus five
+::KEYPHRASES_END
+::RESPONSES
+::RESPONSES_END
+::USESTANDARDRESPONSES
+false
+::USESTANDARDRESPONSES_END
+::SEQUENCE
+5 down
+5 up
+5 down
+5 up
+::SEQUENCE_END
+::COMMAND_END
+::COMMAND
+::NAME
+focus group 6
+::NAME_END
+::KEYPHRASES
+focus group six
+focus six
+::KEYPHRASES_END
+::RESPONSES
+::RESPONSES_END
+::USESTANDARDRESPONSES
+false
+::USESTANDARDRESPONSES_END
+::SEQUENCE
+6 down
+6 up
+6 down
+6 up
+::SEQUENCE_END
+::COMMAND_END
+::COMMAND
+::NAME
+focus group 7
+::NAME_END
+::KEYPHRASES
+focus group seven
+focus seven
+::KEYPHRASES_END
+::RESPONSES
+::RESPONSES_END
+::USESTANDARDRESPONSES
+false
+::USESTANDARDRESPONSES_END
+::SEQUENCE
+7 down
+7 up
+7 down
+7 up
+::SEQUENCE_END
+::COMMAND_END
+::COMMAND
+::NAME
+focus group 8
+::NAME_END
+::KEYPHRASES
+focus group eight
+focus eight
+::KEYPHRASES_END
+::RESPONSES
+::RESPONSES_END
+::USESTANDARDRESPONSES
+false
+::USESTANDARDRESPONSES_END
+::SEQUENCE
+8 down
+8 up
+8 down
+8 up
+::SEQUENCE_END
+::COMMAND_END
+::COMMAND
+::NAME
+focus group 9
+::NAME_END
+::KEYPHRASES
+focus group nine
+focus nine
+::KEYPHRASES_END
+::RESPONSES
+::RESPONSES_END
+::USESTANDARDRESPONSES
+false
+::USESTANDARDRESPONSES_END
+::SEQUENCE
+9 down
+9 up
+9 down
+9 up
+::SEQUENCE_END
+::COMMAND_END
+::COMMAND
+::NAME
+focus group 10
+::NAME_END
+::KEYPHRASES
+focus group ten
+focus ten
+::KEYPHRASES_END
+::RESPONSES
+::RESPONSES_END
+::USESTANDARDRESPONSES
+false
+::USESTANDARDRESPONSES_END
+::SEQUENCE
+0 down
+0 up
+0 down
+0 up
+::SEQUENCE_END
+::COMMAND_END
+::COMMAND
+::NAME
+auto place structures
+::NAME_END
+::KEYPHRASES
+auto place structures on
+auto place structures off
+auto place on
+auto place off
+auto place structures
+::KEYPHRASES_END
+::RESPONSES
+::RESPONSES_END
+::USESTANDARDRESPONSES
+false
+::USESTANDARDRESPONSES_END
+::SEQUENCE
+k down
+k up
+::SEQUENCE_END
+::COMMAND_END
+::COMMAND
+::NAME
+assign group10
+::NAME_END
+::KEYPHRASES
+assign group ten
+assign ten
+::KEYPHRASES_END
+::RESPONSES
+::RESPONSES_END
+::USESTANDARDRESPONSES
+false
+::USESTANDARDRESPONSES_END
+::SEQUENCE
+control down
+0 down
+0 up
+control up
+::SEQUENCE_END
+::COMMAND_END
+::COMMAND
+::NAME
+select group 10
+::NAME_END
+::KEYPHRASES
+select group ten
+select ten
+::KEYPHRASES_END
+::RESPONSES
+::RESPONSES_END
+::USESTANDARDRESPONSES
+false
+::USESTANDARDRESPONSES_END
+::SEQUENCE
+0 down
+0 up
+::SEQUENCE_END
+::COMMAND_END
+::COMMAND
+::NAME
+select group 2
+::NAME_END
+::KEYPHRASES
+select group two
+select two
+::KEYPHRASES_END
+::RESPONSES
+::RESPONSES_END
+::USESTANDARDRESPONSES
+false
+::USESTANDARDRESPONSES_END
+::SEQUENCE
+2 down
+2 up
+::SEQUENCE_END
+::COMMAND_END
+::COMMAND
+::NAME
+assign group 1
+::NAME_END
+::KEYPHRASES
+assign group one
+assign one
+assign 1
+::KEYPHRASES_END
+::RESPONSES
+::RESPONSES_END
+::USESTANDARDRESPONSES
+false
+::USESTANDARDRESPONSES_END
+::SEQUENCE
+control down
+1 down
+1 up
+control up
+::SEQUENCE_END
+::COMMAND_END
+::COMMAND
+::NAME
+focus group 1
+::NAME_END
+::KEYPHRASES
+focus one
+focus group one
+focus 1
+::KEYPHRASES_END
+::RESPONSES
+::RESPONSES_END
+::USESTANDARDRESPONSES
+false
+::USESTANDARDRESPONSES_END
+::SEQUENCE
+1 down
+1 up
+1 down
+1 up
+::SEQUENCE_END
+::COMMAND_END
+::COMMAND
+::NAME
+select group 1
+::NAME_END
+::KEYPHRASES
+select one
+select group one
+select 1
+::KEYPHRASES_END
+::RESPONSES
+::RESPONSES_END
+::USESTANDARDRESPONSES
+false
+::USESTANDARDRESPONSES_END
+::SEQUENCE
+1 down
+1 up
+::SEQUENCE_END
+::COMMAND_END
+::COMMAND
+::NAME
+zoom
+::NAME_END
+::KEYPHRASES
+zoom in
+zoom out
+zoom
+::KEYPHRASES_END
+::RESPONSES
+::RESPONSES_END
+::USESTANDARDRESPONSES
+false
+::USESTANDARDRESPONSES_END
+::SEQUENCE
+space down
+space up
+::SEQUENCE_END
+::COMMAND_END
+::COMMAND
+::NAME
+shift
+::NAME_END
+::KEYPHRASES
+shift
+::KEYPHRASES_END
+::RESPONSES
+::RESPONSES_END
+::USESTANDARDRESPONSES
+false
+::USESTANDARDRESPONSES_END
+::SEQUENCE
+shift down
+Pause: 2 seconds
+Pause: 2 seconds
+shift up
+::SEQUENCE_END
+::COMMAND_END
+::COMMAND
+::NAME
+scuttle
+::NAME_END
+::KEYPHRASES
+scuttle ship
+scuttle structure
+abort scuttle
+destroy ship
+destroy structure
+abort destruction
+::KEYPHRASES_END
+::RESPONSES
+::RESPONSES_END
+::USESTANDARDRESPONSES
+false
+::USESTANDARDRESPONSES_END
+::SEQUENCE
+shift down
+s down
+s up
+shift up
+::SEQUENCE_END
+::COMMAND_END

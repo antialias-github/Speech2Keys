@@ -158,27 +158,6 @@ m up
 ::COMMAND_END
 ::COMMAND
 ::NAME
-Escape-Key (Exit)
-::NAME_END
-::KEYPHRASES
-exit
-escape
-back
-done
-resume
-::KEYPHRASES_END
-::RESPONSES
-::RESPONSES_END
-::USESTANDARDRESPONSES
-false
-::USESTANDARDRESPONSES_END
-::SEQUENCE
-escape down
-escape up
-::SEQUENCE_END
-::COMMAND_END
-::COMMAND
-::NAME
 F3 (HUD)
 ::NAME_END
 ::KEYPHRASES
@@ -243,6 +222,64 @@ i up
 ::COMMAND_END
 ::COMMAND
 ::NAME
+Screenshot
+::NAME_END
+::KEYPHRASES
+screenshot
+::KEYPHRASES_END
+::RESPONSES
+::RESPONSES_END
+::USESTANDARDRESPONSES
+false
+::USESTANDARDRESPONSES_END
+::SEQUENCE
+F12 down
+F12 up
+::SEQUENCE_END
+::COMMAND_END
+::COMMAND
+::NAME
+Cockpit view
+::NAME_END
+::KEYPHRASES
+cockpit view
+enter cockpit view
+exit cockpit view
+::KEYPHRASES_END
+::RESPONSES
+::RESPONSES_END
+::USESTANDARDRESPONSES
+false
+::USESTANDARDRESPONSES_END
+::SEQUENCE
+v down
+v up
+::SEQUENCE_END
+::COMMAND_END
+::COMMAND
+::NAME
+Escape-Key (Exit)
+::NAME_END
+::KEYPHRASES
+exit
+escape
+back
+done
+resume
+cancel
+::KEYPHRASES_END
+::RESPONSES
+::RESPONSES_END
+::USESTANDARDRESPONSES
+false
+::USESTANDARDRESPONSES_END
+::SEQUENCE
+escape down
+escape up
+::SEQUENCE_END
+::COMMAND_END
+::COMMAND
+::NAME
 E-Key (Action)
 ::NAME_END
 ::KEYPHRASES
@@ -293,6 +330,16 @@ trash chute
 gorgothoa
 drop payload
 mail package
+eat pizza
+look at the photo
+lamp
+skip
+look at the fish tank
+holo display
+look at hova model
+look at the poster
+television
+play videogame
 ::KEYPHRASES_END
 ::RESPONSES
 ::RESPONSES_END
@@ -302,41 +349,5 @@ false
 ::SEQUENCE
 e down
 e up
-::SEQUENCE_END
-::COMMAND_END
-::COMMAND
-::NAME
-Screenshot
-::NAME_END
-::KEYPHRASES
-screenshot
-::KEYPHRASES_END
-::RESPONSES
-::RESPONSES_END
-::USESTANDARDRESPONSES
-false
-::USESTANDARDRESPONSES_END
-::SEQUENCE
-F12 down
-F12 up
-::SEQUENCE_END
-::COMMAND_END
-::COMMAND
-::NAME
-Cockpit view
-::NAME_END
-::KEYPHRASES
-cockpit view
-enter cockpit view
-exit cockpit view
-::KEYPHRASES_END
-::RESPONSES
-::RESPONSES_END
-::USESTANDARDRESPONSES
-false
-::USESTANDARDRESPONSES_END
-::SEQUENCE
-v down
-v up
 ::SEQUENCE_END
 ::COMMAND_END
