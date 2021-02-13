@@ -190,28 +190,33 @@ namespace Speech2Keys
 			}
 			if (e.KeyCode == Keys.Delete)
 		    {
-				for (int i = commandsListBox.SelectedIndices.Count-1; i >= 0; i--)
-				{
-					if (commandsListBox.SelectedIndices[i] >=0)
-					{
-						string name = (string)commandsListBox.Items[commandsListBox.SelectedIndices[i]];
-						// do not remove standard commands
-						if (! (name == "AIName" 
-						       || name == "Jokes" 
-						       || name == "Pause Speech Recognition"
-						       || name == "Reactivate Speech Recognition"
-						       || name == "Stop Speech Output"))
-						{
-							commandList.RemoveCommand(name);
-							commandsListBox.Items.RemoveAt(commandsListBox.SelectedIndices[i]);
-						}
-					}
-				}
+                DeleteActionOnCommandList();
 				e.Handled = true;
 			}
 			addCommandButton.Focus();
 			
 		}
+
+        void DeleteActionOnCommandList()
+        {
+            for (int i = commandsListBox.SelectedIndices.Count - 1; i >= 0; i--)
+            {
+                if (commandsListBox.SelectedIndices[i] >= 0)
+                {
+                    string name = (string)commandsListBox.Items[commandsListBox.SelectedIndices[i]];
+                    // do not remove standard commands
+                    if (!(name == "AIName"
+                           || name == "Jokes"
+                           || name == "Pause Speech Recognition"
+                           || name == "Reactivate Speech Recognition"
+                           || name == "Stop Speech Output"))
+                    {
+                        commandList.RemoveCommand(name);
+                        commandsListBox.Items.RemoveAt(commandsListBox.SelectedIndices[i]);
+                    }
+                }
+            }
+        }
 		
 		void FormKeyUp (object sender, KeyEventArgs  e)
 		{
@@ -345,6 +350,16 @@ namespace Speech2Keys
         private void logTextBox_TextChanged(object sender, EventArgs e)
         {
             
+        }
+
+        private void deleteCommandButton_Click(object sender, EventArgs e)
+        {
+            DeleteActionOnCommandList();
+        }
+
+        private void commandsListBox_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            e.Handled = true;
         }
     }
 }
