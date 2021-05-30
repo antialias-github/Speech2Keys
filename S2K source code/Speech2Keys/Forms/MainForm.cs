@@ -12,6 +12,7 @@ using System.Drawing;
 using System.Windows.Forms;
 using System.IO;
 using System.Runtime.Serialization.Formatters.Binary;
+using System.Reflection;
 
 
 namespace Speech2Keys
@@ -31,135 +32,149 @@ namespace Speech2Keys
 		JokesForm jokesForm;
 		QuickLaunch quickLaunch;
 		ErrorOnStartup errorOnStartup;
-		
-		
-		public	Workflow commandWorkflow;
-		public	Workflow reactivateWorkflow;
-		public	Workflow pauseWorkflow;
-		public	Workflow stopSpeechWorkflow;
-		public	Workflow jokesWorkflow;
-		public	Workflow aINameWorkflow;
-		public	Workflow profileNameWorkflow;
-		public  Workflow standardResponsesWorkflow;
-		
-		
+
+
+		public Workflow commandWorkflow;
+		public Workflow reactivateWorkflow;
+		public Workflow pauseWorkflow;
+		public Workflow stopSpeechWorkflow;
+		public Workflow jokesWorkflow;
+		public Workflow aINameWorkflow;
+		public Workflow profileNameWorkflow;
+		public Workflow standardResponsesWorkflow;
+
+
 		Command command;
 		CommandList commandList;
 		Workflow currentWorkflow;
 		Serializer serializer;
-		
+
 		bool error;
-		
+
 		public MainForm()
 		{
-            this.Icon = Resource.s2k;
-            //
-            // The InitializeComponent() call is required for Windows Forms designer support.
-            //
-            error = false;
+			this.Icon = Resource.s2k;
+			//
+			// The InitializeComponent() call is required for Windows Forms designer support.
+			//
+			error = false;
 			InitializeComponent();
-				
+
 			serializer = new Serializer();
-			
+
 			parentForm = new ParentForm();
-			FormatForm(parentForm, DockStyle.Fill);	
+			FormatForm(parentForm, DockStyle.Fill);
 			if (parentForm.error)
 				error = true;
 			errorOnStartup = new ErrorOnStartup();
-			FormatForm(errorOnStartup, DockStyle.Fill);	
+			FormatForm(errorOnStartup, DockStyle.Fill);
 			aINameForm = new AINameForm();
-			FormatForm(aINameForm, DockStyle.None);	
+			FormatForm(aINameForm, DockStyle.None);
 			commandNameForm = new CommandNameForm();
-			FormatForm(commandNameForm, DockStyle.None);		
+			FormatForm(commandNameForm, DockStyle.None);
 			keyPhraseForm = new KeyPhraseForm();
-			FormatForm(keyPhraseForm, DockStyle.None);	
+			FormatForm(keyPhraseForm, DockStyle.None);
 			profileNameForm = new ProfileNameForm();
-			FormatForm(profileNameForm, DockStyle.None);	
+			FormatForm(profileNameForm, DockStyle.None);
 			responsesForm = new ResponsesForm();
-			FormatForm(responsesForm, DockStyle.None);	
+			FormatForm(responsesForm, DockStyle.None);
 			keyPressedForm = new KeyPressedForm();
-			FormatForm(keyPressedForm, DockStyle.None);	
+			FormatForm(keyPressedForm, DockStyle.None);
 			jokesForm = new JokesForm();
-			FormatForm(jokesForm, DockStyle.None);	
+			FormatForm(jokesForm, DockStyle.None);
 			quickLaunch = new QuickLaunch();
 			FormatForm(quickLaunch, DockStyle.Fill);
 			quickLaunch.SecureStrip();
-		
-			
+
+
 			command = new Command();
-			commandList = new CommandList();	
+			commandList = new CommandList();
 			parentForm.commandList = commandList;
 			quickLaunch.commandList = commandList;
 			quickLaunch.parentForm = parentForm;
-			
+
 			// Setup a number of workflows
 			aINameWorkflow = new Workflow();
 			aINameWorkflow.AddItem(new AINameWorkflowItem(aINameForm));
-			
+
 			jokesWorkflow = new Workflow();
 			jokesWorkflow.AddItem(new KeyPhraseWorkflowItem(keyPhraseForm));
 			jokesWorkflow.AddItem(new JokesWorkflowItem(jokesForm));
-			
+
 			reactivateWorkflow = new Workflow();
 			reactivateWorkflow.AddItem(new KeyPhraseWorkflowItem(keyPhraseForm));
 			reactivateWorkflow.AddItem(new ResponsesWorkflowItem(responsesForm));
-			
+
 			pauseWorkflow = new Workflow();
 			pauseWorkflow.AddItem(new KeyPhraseWorkflowItem(keyPhraseForm));
 			pauseWorkflow.AddItem(new ResponsesWorkflowItem(responsesForm));
-			
+
 			stopSpeechWorkflow = new Workflow();
 			stopSpeechWorkflow.AddItem(new KeyPhraseWorkflowItem(keyPhraseForm));
 			stopSpeechWorkflow.AddItem(new ResponsesWorkflowItem(responsesForm));
-		
+
 			profileNameWorkflow = new Workflow();
 			profileNameWorkflow.AddItem(new ProfileNameWorkflowItem(profileNameForm));
-		
+
 			commandWorkflow = new Workflow();
 			commandWorkflow.AddItem(new CommandNameWorkflowItem(commandNameForm));
 			commandWorkflow.AddItem(new KeyPressWorkflowItem(keyPressedForm));
 			commandWorkflow.AddItem(new KeyPhraseWorkflowItem(keyPhraseForm));
 			commandWorkflow.AddItem(new ResponsesWorkflowItem(responsesForm));
-			
+
 			standardResponsesWorkflow = new Workflow();
 			standardResponsesWorkflow.AddItem(new ResponsesWorkflowItem(responsesForm));
-			
+
 			parentForm.EnableStopButton(false);
+
+			
+
 		}
-		
+
 		void FormatForm(Form form, DockStyle style)
 		{
 			form.MdiParent = this;
 			form.FormBorderStyle = FormBorderStyle.None;
 			form.Dock = style;
 		}
-	
+
 		void MainFormLoad(object sender, EventArgs e)
 		{
-			
+
 			if (!error)
 			{
+				bool couldLoadLastProfile = LoadLastUsedProfile();
 				parentForm.Show();
-				quickLaunch.Show();
-				quickLaunch.BringToFront();
-				quickLaunch.Activate();
+				if (couldLoadLastProfile)
+				{
+					parentForm.StartButtonClick(parentForm, null);
+				}
+				else
+                {
+					
+					parentForm.StopButtonClick(parentForm, null);
+					NewProfileToolStripMenuItemClick(this, null);
+				}
+				//	quickLaunch.Show();
+				//	quickLaunch.BringToFront();
+				//	quickLaunch.Activate();
 			}
 			else
 			{
 				errorOnStartup.Show();
 			}
 		}
-			
+
 		void NewProfileToolStripMenuItemClick(object sender, EventArgs e)
 		{
 			currentWorkflow = profileNameWorkflow;
-			SetupWorkflow(null, false);	
+			SetupWorkflow(null, false);
 		}
 		void AINameToolStripMenuItemClick(object sender, EventArgs e)
 		{
 			currentWorkflow = aINameWorkflow;
-			SetupWorkflow("AIName", true);	
-		}	
+			SetupWorkflow("AIName", true);
+		}
 
 		void JokesToolStripMenuItem1Click(object sender, EventArgs e)
 		{
@@ -186,7 +201,7 @@ namespace Speech2Keys
 			currentWorkflow = commandWorkflow;
 			SetupWorkflow(null, true);
 		}
-		
+
 		public void EditCommand(string name)
 		{
 			currentWorkflow = commandWorkflow;
@@ -202,17 +217,17 @@ namespace Speech2Keys
 				currentWorkflow = stopSpeechWorkflow;
 			SetupWorkflow(name, true);
 		}
-		
+
 		void StandardResponsesToolStripMenuItemClick(object sender, EventArgs e)
 		{
 			currentWorkflow = standardResponsesWorkflow;
 			SetupWorkflow(null, false);
 		}
-		
+
 		void SetupWorkflow(string commandName, bool createCommand)
 		{
 			currentWorkflow.parentForm = parentForm;
-			
+
 			if (commandName != null && commandList.CommandIsAlreadyDefined(commandName))
 			{
 				currentWorkflow.alreadyExistingCommand = commandList.GetCommand(commandName);
@@ -220,41 +235,44 @@ namespace Speech2Keys
 			}
 			else
 				currentWorkflow.alreadyExistingCommand = null;
-			
+
 			if (createCommand)
 				currentWorkflow.command = new Command();
 			else
 				currentWorkflow.command = null;
-				
+
 			if (!string.IsNullOrEmpty(commandName) && currentWorkflow.command != null)
 				currentWorkflow.command.name = commandName;
-			
+
 			currentWorkflow.commandList = commandList;
 			currentWorkflow.StartWorkflow();
 		}
-		
+
 		void LoadProfileToolStripMenuItemClick(object sender, EventArgs e)
 		{
 			DialogResult result = openFileDialog1.ShowDialog();
-			if(result==DialogResult.OK)
+			if (result == DialogResult.OK)
 			{
 				try
 				{
 					commandList.Reset();
 					serializer.Deserialize(ref commandList, openFileDialog1.FileName);
+					UpdateStartupConfiguration(openFileDialog1.FileName);
 					parentForm.commandList = commandList;
 					parentForm.FillCommandsListBox(commandList);
-					this.Text = commandList.ProfileName;
+					this.Text = "Active Profil: " + commandList.ProfileName;
 				}
 				catch (IOException)
 				{
 				}
 			}
 		}
+
+
 		public void LoadAndLaunch()
 		{
 			LoadProfileToolStripMenuItemClick(this, null);
-			parentForm.StartButtonClick(parentForm,null);
+			parentForm.StartButtonClick(parentForm, null);
 		}
 		public void CreateProfileNew()
 		{
@@ -267,17 +285,64 @@ namespace Speech2Keys
 		void SaveProfileToolStripMenuItemClick(object sender, EventArgs e)
 		{
 			saveFileDialog1.FileName = parentForm.commandList.ProfileName;
-			if(saveFileDialog1.ShowDialog() ==DialogResult.OK)
+			if (saveFileDialog1.ShowDialog() == DialogResult.OK)
 			{
 				try
 				{
 					serializer.Serialize(commandList, saveFileDialog1.FileName);
+					UpdateStartupConfiguration(saveFileDialog1.FileName);
 				}
 				catch (IOException)
-				{}
+				{ }
 			}
 		}
-		
+
+		public bool LoadLastUsedProfile()
+		{
+			string myConfigFile = new FileInfo(Assembly.GetEntryAssembly().Location).Directory.ToString() + "\\config.s2k";
+			if (!File.Exists(myConfigFile))
+				return false;
+			
+			var file = new StreamReader(myConfigFile);
+			string line;
+
+			while ((line = file.ReadLine()) != null)
+			{
+				if (File.Exists(line))
+				{
+					commandList.Reset();
+					serializer.Deserialize(ref commandList, line);
+					parentForm.commandList = commandList;
+					parentForm.FillCommandsListBox(commandList);
+					this.Text = "Active Profil: " + commandList.ProfileName;
+					file.Close();
+					return true;
+				}
+			}
+			file.Close();
+			return (false);
+			
+		}
+
+		public void UpdateStartupConfiguration(string lastChosenFilename)
+        {
+			if (lastChosenFilename == "")
+				return;
+
+			string myConfigFile = new FileInfo(Assembly.GetEntryAssembly().Location).Directory.ToString() + "\\config.s2k";
+			using (FileStream fs = new FileStream(myConfigFile, FileMode.OpenOrCreate, FileAccess.ReadWrite, FileShare.None))
+			{
+				StreamReader sr = new StreamReader(fs);
+				using (StreamWriter sw = new StreamWriter(fs))
+				{
+					// discard the contents of the file by setting the length to 0
+					fs.SetLength(0);
+					// write the new content
+					sw.Write(lastChosenFilename);
+				}
+			}
+		}
+
 		public void UpdateTitleBar(string text)
 		{
 			this.Text = text;

@@ -299,7 +299,7 @@ namespace Speech2Keys
 			recognitionWorker.StartRecognition(commandList);
 			
 		}
-		void StopButtonClick(object sender, EventArgs e)
+		public void StopButtonClick(object sender, EventArgs e)
 		{
 			running = false;
 			foreach(var c in this.Controls)
@@ -360,6 +360,11 @@ namespace Speech2Keys
         private void commandsListBox_KeyPress(object sender, KeyPressEventArgs e)
         {
             e.Handled = true;
+        }
+
+        private void ParentForm_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

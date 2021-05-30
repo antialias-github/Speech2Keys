@@ -162,6 +162,7 @@ namespace Speech2Keys
             this.Controls.Add(this.commandsListBox);
             this.Name = "ParentForm";
             this.Text = "ParentForm";
+            this.Load += new System.EventHandler(this.ParentForm_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 

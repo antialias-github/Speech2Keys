@@ -27,9 +27,7 @@ namespace Speech2Keys
 			// The InitializeComponent() call is required for Windows Forms designer support.
 			//
 			InitializeComponent();
-			
-			
-			
+
 			//
 			// TODO: Add constructor code after the InitializeComponent() call.
 			//
@@ -71,5 +69,10 @@ namespace Speech2Keys
 			this.Visible = false;
 			
 		}
-	}
+
+        private void QuickLaunch_Shown(object sender, EventArgs e)
+        {
+			LoadAndLaunchButtonClick(this, null);
+		}
+    }
 }

@@ -22,5 +22,6 @@ namespace Speech2Keys
 		void LoadWithoutLaunch();
 		void EnableMenuStrip (bool enable);
 		void ErrorOnStartup();
+		bool LoadLastUsedProfile();
 	}
 }
