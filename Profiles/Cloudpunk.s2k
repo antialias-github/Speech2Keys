@@ -280,6 +280,26 @@ escape up
 ::COMMAND_END
 ::COMMAND
 ::NAME
+Enter or abandon race
+::NAME_END
+::KEYPHRASES
+enter race
+abandon race
+::KEYPHRASES_END
+::RESPONSES
+::RESPONSES_END
+::USESTANDARDRESPONSES
+false
+::USESTANDARDRESPONSES_END
+::SEQUENCE
+e down
+Pause: 2 seconds
+Pause: 2 seconds
+e up
+::SEQUENCE_END
+::COMMAND_END
+::COMMAND
+::NAME
 E-Key (Action)
 ::NAME_END
 ::KEYPHRASES
@@ -341,6 +361,12 @@ look at the poster
 television
 play videogame
 delivery box
+sustenance recombinator
+force field
+crane control
+close valve
+bypass circuit
+holdout pod
 ::KEYPHRASES_END
 ::RESPONSES
 ::RESPONSES_END
