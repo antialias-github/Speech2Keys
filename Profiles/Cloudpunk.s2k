@@ -258,28 +258,6 @@ v up
 ::COMMAND_END
 ::COMMAND
 ::NAME
-Escape-Key (Exit)
-::NAME_END
-::KEYPHRASES
-exit
-escape
-back
-done
-resume
-cancel
-::KEYPHRASES_END
-::RESPONSES
-::RESPONSES_END
-::USESTANDARDRESPONSES
-false
-::USESTANDARDRESPONSES_END
-::SEQUENCE
-escape down
-escape up
-::SEQUENCE_END
-::COMMAND_END
-::COMMAND
-::NAME
 Enter or abandon race
 ::NAME_END
 ::KEYPHRASES
@@ -367,6 +345,9 @@ crane control
 close valve
 bypass circuit
 holdout pod
+enter building
+reset switch
+throw package into water
 ::KEYPHRASES_END
 ::RESPONSES
 ::RESPONSES_END
@@ -376,5 +357,27 @@ false
 ::SEQUENCE
 e down
 e up
+::SEQUENCE_END
+::COMMAND_END
+::COMMAND
+::NAME
+Escape-Key (Exit)
+::NAME_END
+::KEYPHRASES
+exit
+escape
+back
+done
+resume
+cancel
+::KEYPHRASES_END
+::RESPONSES
+::RESPONSES_END
+::USESTANDARDRESPONSES
+false
+::USESTANDARDRESPONSES_END
+::SEQUENCE
+escape down
+escape up
 ::SEQUENCE_END
 ::COMMAND_END
