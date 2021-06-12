@@ -258,26 +258,6 @@ v up
 ::COMMAND_END
 ::COMMAND
 ::NAME
-Enter or abandon race
-::NAME_END
-::KEYPHRASES
-enter race
-abandon race
-::KEYPHRASES_END
-::RESPONSES
-::RESPONSES_END
-::USESTANDARDRESPONSES
-false
-::USESTANDARDRESPONSES_END
-::SEQUENCE
-e down
-Pause: 2 seconds
-Pause: 2 seconds
-e up
-::SEQUENCE_END
-::COMMAND_END
-::COMMAND
-::NAME
 E-Key (Action)
 ::NAME_END
 ::KEYPHRASES
@@ -379,5 +359,26 @@ false
 ::SEQUENCE
 escape down
 escape up
+::SEQUENCE_END
+::COMMAND_END
+::COMMAND
+::NAME
+Enter or abandon race
+::NAME_END
+::KEYPHRASES
+enter race
+abandon race
+start race
+::KEYPHRASES_END
+::RESPONSES
+::RESPONSES_END
+::USESTANDARDRESPONSES
+false
+::USESTANDARDRESPONSES_END
+::SEQUENCE
+e down
+Pause: 2 seconds
+Pause: 2 seconds
+e up
 ::SEQUENCE_END
 ::COMMAND_END
