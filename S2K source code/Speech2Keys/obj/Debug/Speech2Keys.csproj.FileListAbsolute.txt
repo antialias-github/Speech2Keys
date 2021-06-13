@@ -42,7 +42,6 @@ C:\Users\Peter\Documents\GitHub\Speech2Keys\S2K source code\Speech2Keys\bin\Debu
 C:\Users\Peter\Documents\GitHub\Speech2Keys\S2K source code\Speech2Keys\bin\Debug\Speech2Keys.exe
 C:\Users\Peter\Documents\GitHub\Speech2Keys\S2K source code\Speech2Keys\bin\Debug\Speech2Keys.pdb
 C:\Users\Peter\Documents\GitHub\Speech2Keys\S2K source code\Speech2Keys\bin\Debug\InputManager.dll
-C:\Users\Peter\Documents\GitHub\Speech2Keys\S2K source code\Speech2Keys\obj\Debug\Speech2Keys.csprojAssemblyReference.cache
 C:\Users\Peter\Documents\GitHub\Speech2Keys\S2K source code\Speech2Keys\obj\Debug\Speech2Keys.AINameForm.resources
 C:\Users\Peter\Documents\GitHub\Speech2Keys\S2K source code\Speech2Keys\obj\Debug\Speech2Keys.CommandNameForm.resources
 C:\Users\Peter\Documents\GitHub\Speech2Keys\S2K source code\Speech2Keys\obj\Debug\Speech2Keys.ErrorOnStartup.resources
